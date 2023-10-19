@@ -40,8 +40,8 @@ return (nw_ptr);
 }
 
 /**
-* pering_lin - function that tokens args
-* @zin:- ptr to args
+* persing_lin - function that tokens hrgs
+* @zin:- ptr to hrgs
 * Return:- Always 0
 */
 
@@ -65,7 +65,7 @@ loco++;
 if (loco >= buff_size)
 {
 buff_size = buff_size + BUFFSIZE;
-dobtok = _realloc(dobtok, BUFFSIZE, buff_size * sizeof(char *));
+dobtok = _realloc(dobtok, BUFFSIZE, buff_size *sizeof(char *));
 
 if (dobtok == NULL)
 {

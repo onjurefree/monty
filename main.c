@@ -12,13 +12,11 @@
 void adding_nod(char *string)
 {
 used_m *nw;
-
 nw = malloc(sizeof(used_m));
 if (nw == NULL)
 {
 exit(EXIT_FAILURE);
 }
-
 nw->data = string;
 nw->next = tok_get;
 tok_get = nw;
@@ -68,16 +66,10 @@ void (*func)(stack_t **, unsigned int);
 
 fp = NULL;
 if (hrgc != 2)
-{
 error_handle(0, cont, hrgv[1]);
-}
-
 fp = fopen(hrgv[1], "r");
 if (fp == NULL)
-{
 error_handle(2, cont, hrgv[1]);
-}
-
 tokens = NULL;
 while (w == 1)
 {
@@ -94,15 +86,12 @@ if (d != -1)
 tokens = persing_lin(zin);
 func = gett_op(tokens[0], cont);
 if (tokens[0])
-{
 push_chck(tokens, cont);
-}
 func(&list, cont), free(tokens);
 }
 else
 {
 w = 0;
-}
 cont++;
 }
 fclose(fp);
