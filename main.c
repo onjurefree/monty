@@ -1,6 +1,5 @@
-#include <stdio.h>
+#define _POSIX_C_SOURCE 200809L
 #include "monty.h"
-
 #include <fcntl.h>
 #include <ctype.h>
 

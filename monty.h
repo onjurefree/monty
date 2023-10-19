@@ -6,7 +6,7 @@
 #include <string.h>
 #include <unistd.h>
 
-#define DELIM "\t\n"
+#define DELIM "\t\n "
 #define BUFFSIZE 1024
 /**
 * struct stacks_s - doubly linked list presentation of a stack (or queue)
