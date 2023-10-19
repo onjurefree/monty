@@ -2,7 +2,7 @@
 
 /**
 * ppo_pop - remove stack elements
-* @lin_num:- num lines
+* @lin_num:- list number
 * @head:- list head
 * Return:- Always 0
 */

@@ -90,7 +90,7 @@ void adding_nod(char *string);
 char **persing_lin(char *zin);
 void *_realloc (void *pointer, unsigned int pld, unsigned int newb);
 void error_handle(int flg, unsigned int lin_num, char *pme);
-void push_chck(char **tok,unsigned int dn);
+void push_chck(char **tak,unsigned int dn);
 
 void ppo_rotl(stack_t **start, unsigned int lin_num);
 void ppo_rotr(stack_t **start, unsigned int lin_num);

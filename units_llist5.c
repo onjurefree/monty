@@ -10,21 +10,21 @@ int _digit(char *string);
 * Return:- Always 0
 */
 
-void push_chck(char **tak, unsigned int dn)
+void push_chck(char **tok, unsigned int dn)
 {
 
-if (strcmp(tak[0], "push") == 0 && tak[1])
+if (strcmp(tok[0], "push") == 0 && tok[1])
 {
-if (_digit(tak[1]) == 0)
+if (_digit(tok[1]) == 0)
 {
-dn = atoi(tak[1]);
+n = atoi(tok[1]);
 }
 else
 {
 error_handle(4, dn, "monty work");
 }
 }
-else if (strcmp(tak[0], "push") == 0 && !tak[1])
+else if (strcmp(tok[0], "push") == 0 && !tok[1])
 {
 error_handle(4, dn, "monty work");
 }

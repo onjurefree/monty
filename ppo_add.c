@@ -16,7 +16,7 @@ if (*head && (*head)->next)
 {
 today = *head;
 x = today->n + today->next->n;
-today->n = x;
+today->next->n = x;
 free(today);
 *head = (*head)->next;
 }

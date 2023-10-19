@@ -59,7 +59,7 @@ d++;
 int main(int hrgc, char **hrgv)
 {
 ssize_t d = 0, w = 1;
-size_t buffsize = 1024;
+size_t buffsiz = 1024;
 unsigned int cont = 1;
 char *zin = NULL;
 void (*func)(stack_t **, unsigned int);
@@ -74,7 +74,7 @@ tokens = NULL;
 while (w == 1)
 {
 zin = NULL;
-d = getline(&zin, &buffsize, fp);
+d = getline(&zin, &buffsiz, fp);
 adding_nod(zin);
 if (d != -1 && zin[0] == '#')
 {
@@ -90,7 +90,6 @@ push_chck(tokens, cont);
 func(&list, cont), free(tokens);
 }
 else
-{
 w = 0;
 cont++;
 }

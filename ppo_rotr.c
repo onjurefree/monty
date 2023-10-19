@@ -15,7 +15,7 @@ stack_t *down;
 
 (void) lin_num;
 
-if (!start || !*start || !*start || !(*start)->next)
+if (!start || !*start || !(*start)->next)
 return;
 
 down = *start;

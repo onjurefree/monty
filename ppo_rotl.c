@@ -6,6 +6,7 @@
 * @start:- head of stack
 * Return:- Always 0
 */
+
 void ppo_rotl(stack_t **start, unsigned int lin_num)
 {
 stack_t *pu;

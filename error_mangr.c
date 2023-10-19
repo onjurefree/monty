@@ -1,5 +1,6 @@
 #include "monty.h"
 
+
 void mini_error_handle(int flg, unsigned int lin_num);
 
 /**
@@ -22,7 +23,7 @@ fprintf(stderr, "Error: malloc failed\n");
 else if (flg == 2)
 
 {
-fprintf(stderr, "error: Can't open file %s\n", pme);
+fprintf(stderr, "Error: Can't open file %s\n", pme);
 }
 
 else if (flg == 3)
@@ -136,7 +137,7 @@ else if (flg == 16)
 fprintf(stderr, "L%u: can't pchar, stack empty\n", lin_num);
 }
 
-else if (flg == 16)
+else if (flg == 0)
 
 {
 fprintf(stderr, "USAGE: monty file\n");

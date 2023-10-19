@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
-* ppo_div -function that div top element
+* ppo_div - function that div top element
 * @lin_num:- lin number
 * @head:- list head
 * Return:- Always 0

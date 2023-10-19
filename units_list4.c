@@ -2,7 +2,7 @@
 
 /**
 * ppo_nop - diplays elements of list
-* @lin_num:- num lines
+* @lin_num:- number num
 * @head:- list head
 * Return:- Always 0
 */
